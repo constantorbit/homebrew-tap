@@ -40,7 +40,8 @@ brew install postgresql
 brew unlink postgresql
 ```
 
-The previous install of postgresql runs `initdb`, which creates database structures incompatible with 10.6. This needs to be removed with:
+You may or may not need to nuke the data files, depending on which version(s) you
+already had.  If you do need to do so:
 
 ```sh
 rm -rf /usr/local/var/postgres
